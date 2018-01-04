@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="PaneBase" prefHeight="335.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gerador.de.senhas.GeradorController">
+    <children>
+      <Label layoutX="23.0" layoutY="64.0" text="Dominio:" />
+      <Label layoutX="23.0" layoutY="118.0" text="SIP Trunk:" />
+      <Label layoutX="27.0" layoutY="168.0" text="Usuario:" />
+      <Label layoutX="27.0" layoutY="222.0" text="Terminal:" />
+      <TextField fx:id="txtDominio" layoutX="23.0" layoutY="84.0" prefHeight="25.0" prefWidth="129.0" />
+      <Label layoutX="117.0" layoutY="12.0" prefHeight="33.0" prefWidth="135.0" text="Gerar Senhas">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSipTrunk" layoutX="23.0" layoutY="135.0" prefHeight="25.0" prefWidth="129.0" />
+      <TextField fx:id="txtUsuario" layoutX="27.0" layoutY="185.0" prefHeight="25.0" prefWidth="129.0" />
+      <TextField fx:id="txtTerminal" layoutX="27.0" layoutY="239.0" prefHeight="25.0" prefWidth="129.0" />
+      <JFXButton fx:id="butGera" layoutX="27.0" layoutY="288.0" text="Gera" />
+      <JFXButton fx:id="butLimpa" layoutX="95.0" layoutY="288.0" text="Limpa" />
+      <Pane layoutX="190.0" layoutY="68.0" prefHeight="239.0" prefWidth="236.0" style="-fx-border-style: solid;">
+         <children>
+            <JFXButton fx:id="butCopiaAdm" layoutX="168.0" layoutY="40.0" text="Copia" />
+            <JFXButton fx:id="butCopiaSip" layoutX="168.0" layoutY="91.0" text="Copia" />
+            <JFXButton fx:id="butCopiaUsu" layoutX="168.0" layoutY="141.0" text="Copia" />
+            <JFXButton fx:id="butCopiaTer" layoutX="168.0" layoutY="195.0" text="Copia" />
+            <TextField fx:id="txtPassTerminal" editable="false" layoutX="18.0" layoutY="195.0" prefHeight="25.0" prefWidth="129.0" />
+            <TextField fx:id="txtPassUsuario" editable="false" layoutX="18.0" layoutY="141.0" prefHeight="25.0" prefWidth="129.0" />
+            <TextField fx:id="txtPassSipTrunk" editable="false" layoutX="14.0" layoutY="91.0" prefHeight="25.0" prefWidth="129.0" />
+            <TextField fx:id="txtPassAdministrator" editable="false" layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="129.0" />
+            <Label layoutX="18.0" layoutY="178.0" text="Terminal:" />
+            <Label layoutX="18.0" layoutY="124.0" text="Usuario:" />
+            <Label layoutX="14.0" layoutY="74.0" text="SIP Trunk:" />
+            <Label layoutX="14.0" layoutY="20.0" text="Administrator:" />
+         </children>
+      </Pane>
+      <Label layoutX="190.0" layoutY="47.0" text="Senhas" />
+    </children>
+</AnchorPane>
